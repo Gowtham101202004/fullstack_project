@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/naruto_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        td img{
+            margin: 30px;
+            width: 200px;
+            height: 300px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        video{
+            margin: 30px;
+            height: 300px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        .back-icon{
+            position: absolute;
+            margin-left: 30px;
+            width: 45px;
+            height: auto;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: ease-in 0.2s;
+        }
+        .back-icon:hover{
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Movies/MovieCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <center>
+        <h1>Naruto Movies</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="/Media/Images/Believe_It.jpg" class="movie-image">
+                    <video src="/Media/Video/Anime/Naruto_ Trailer.mp4" controls></video>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/Media/Images/Shonen_Jump.jpg">
+                    <video src="/Media/Video/Anime/Naruto_ Trailer.mp4" controls></video>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/Media/Images/Blood_Prison.jpg">
+                    <video src="/Media/Video/Anime/Naruto_ Trailer.mp4" controls></video>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/Media/Images/The_Will_of_Fire.jpg">
+                    <video src="/Media/Video/Anime/Naruto_ Trailer.mp4" controls></video>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

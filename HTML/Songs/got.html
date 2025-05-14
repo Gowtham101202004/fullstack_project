@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+            /* cursor: url('/Media/Images/sword_cursor.png'), auto; */
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/got_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        .image{
+            width: 400px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border-color: white;
+            border-width: 2px;
+            padding: 5px;
+        }
+        audio{
+            height: 40px;
+            padding: 10px;
+        }
+        .back-icon{
+            position: absolute;
+            margin-left: 30px;
+            width: 45px;
+            height: auto;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: ease-in 0.2s;
+        }
+        .back-icon:hover{
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: -100px;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .container img{
+            width: 400px;
+        }
+        .slide-then-float {
+            position: absolute;
+            width: 150px;
+            animation: slideRight 1.5s ease-out forwards, float 3s ease-in-out infinite;
+            animation-delay: 0s, 1s;
+        }
+        @keyframes slideRight {
+            from {
+                left: 0;
+            }
+            to {
+                left: 65px;
+            }
+        }
+        @keyframes float {
+            0%, 100% {
+                top: 0;
+            }
+            50% {
+                top: -7px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <div class="container">
+        <img src="/Media/Images/dragon_image.png" class="slide-then-float">
+    </div>
+    <center>
+        <h1>Game of Thrones Songs</h1>
+        <img src="/Media/Images/got.jpg" class="image">
+        <br/>
+        <br/>
+        <table border>
+            <tr>
+                <td><b>Genre</b></td>
+                <td>Action, Adventure, Fantasy, Serial drama, Tragedy</td>
+            </tr>
+            <tr>
+                <td><b>Created by</b></td>
+                <td>David Benioff, D.B.Weiss</td>
+            </tr>
+            <tr>
+                <td><b>Theme music composer</b></td>
+                <td>Ramin Djawadi</td>
+            </tr>
+            <tr>
+                <td><b>Original language</b></td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td><b>Original name</b></td>
+                <td>Game of Thrones</td>
+            </tr>
+            <tr>
+                <td><b>Release date</b></td>
+                <td>April 17, 2011 – May 19, 2019</td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>Theme Song</td>
+                <td><audio src="/Media/Audio/GOT_Songs/Game of Thrones - Theme Song.mp3" controls>Theme Song</audio></td>
+            </tr>
+            <tr>
+                <td>Save Our Son</td>
+                <td><audio src="/Media/Audio/GOT_Songs/Game of Thrones - Save Our Son.mp3" controls>Save Our Son</audio></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Heist</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/moneyheist_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        .image{
+            width: 400px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 5px;
+            border-color: white;
+            border-width: 2px;
+        }
+        audio{
+            height: 40px;
+            padding: 10px;
+        }
+        .back-icon{
+            position: absolute;
+            margin-left: 30px;
+            width: 45px;
+            height: auto;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: ease-in 0.2s;
+        }
+        .back-icon:hover{
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <center>
+        <h1>Money Heist Songs</h1>
+        <img src="/Media/Images/moneyheist.jpg" class="image">
+        <br/>
+        <br/>
+        <table border>
+            <tr>
+                <td><b>Genre</b></td>
+                <td>Heist, Crime drama, thriller</td>
+            </tr>
+            <tr>
+                <td><b>Created by</b></td>
+                <td>Alex Pina</td>
+            </tr>
+            <tr>
+                <td><b>Theme music composer</b></td>
+                <td>Manel Santisteban</td>
+            </tr>
+            <tr>
+                <td><b>Original language</b></td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td><b>Original name</b></td>
+                <td>La casa de papel</td>
+            </tr>
+            <tr>
+                <td><b>Release date</b></td>
+                <td>19 July 2019 – 3 December 2021</td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td>Bella Ciao</td>
+                <td><audio src="/Media/Audio/Money_Heist_Songs/La Casa De Papel - Bella Ciao.mp3" controls>Bella Ciao</audio></td>
+            </tr>
+            <tr>
+                <td>My life is going</td>
+                <td><audio src="/Media/Audio/Money_Heist_Songs/La Casa De Papel - My life is going on.mp3" controls>Need You Tonight</audio></td>
+            </tr>
+            <tr>
+                <td>Need You Tonight</td>
+                <td><audio src="/Media/Audio/Money_Heist_Songs/La Casa De Papel -  Need You Tonight.mp3" controls>Need You Tonight</audio></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

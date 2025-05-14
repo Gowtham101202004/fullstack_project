@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/music_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        table img{
+            width: 400px;
+            transition: ease 0.1s;
+            border: 2px solid white;
+            transition: ease 0.2s;
+        }
+        table img:hover{
+            box-shadow: white 0px 0px 10px;
+            cursor: pointer;
+        }
+        th{
+            padding: 0 40px;
+        }
+        .back-icon{
+            position: absolute;
+            margin-left: 30px;
+            width: 45px;
+            height: auto;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            transition: ease-in 0.2s;
+        }
+        .back-icon:hover{
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/HomePage.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <center>
+        <h1>Song Collection</h1>
+        <table>
+            <tr>
+                <th>
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/moneyheist.jpg">
+                    </a>
+                    <h2>Money Heist</h2>
+                </th>
+                <th>
+                    <a href="./got.html">
+                        <img src="/Media/Images/got.jpg">
+                    </a>
+                    <h2>Game of Thrones</h2>
+                </th>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
