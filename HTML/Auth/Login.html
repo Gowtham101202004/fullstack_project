@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <center>
+        <div class="logo_and_name">
+            <img src="/Media/Images/Netify_Logo(White).png">
+            <h1>Netify</h1>
+        </div>
+        <div class="auth-details">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" required>
+                <label>username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label>password</label>
+            </div>
+            <p>forget password?</p>
+            <div class="auth-button">
+                <a href="/HTML/HomePage.html">
+                    <input type="submit" value="Login">
+                </a>
+            </div>
+            <div class="last">
+                Don't have an account?
+                <a href="/HTML/Auth/SignUp.html">
+                    <span> SignUp</span>
+                </a>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
