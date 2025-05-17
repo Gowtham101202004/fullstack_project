@@ -30,48 +30,6 @@
             font-size: 20px;
             color: white;
         }
-        .logo_and_name{
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo_and_name::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 46%;
-            width: 50px;
-            height: 50px;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow:
-            0 0 15px rgba(255, 255, 255, 0.8),
-            0 0 30px rgba(220, 220, 220, 0.4),
-            0 0 45px rgba(190, 190, 190, 0.3);
-            animation: logoGlow 2s infinite ease-in-out;
-            z-index: -1;
-        }
-        @keyframes logoGlow {
-            0% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 0.8;
-            }
-            50% {
-                transform: translate(-50%, -50%) scale(1.2);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 0.8;
-            }
-        }
-        .logo_and_name img{
-            width: 70px;
-            padding: 0 10px;
-        }
         a{
             display: flex;
             flex-direction: row;
@@ -84,7 +42,7 @@
             margin: 100px 400px 0 400px;
             justify-content: space-evenly;
         }
-        .container-a {
+        .container .container-box-a, .container-box-b{
             display: flex;
             flex-direction: row;
             padding: 50px 40px;
@@ -93,28 +51,35 @@
             backdrop-filter: blur(3px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 2px 2px 4px 5px rgba(1, 1, 1, 0.2);            
-            transition: ease 0.2s;
+            transition: ease 0.3s;
         }
-        .container-a:hover{
+        .container .container-box-a:hover{
             text-shadow: white 0px 0px 10px;
-            box-shadow: white 0px 0px 7px;
+            box-shadow: white 0px 0px 12px;
+            background: url('/Media/Images/music2.jpg');
+            background-size: cover;         
+            background-position: center;   
+            background-repeat: no-repeat; 
+            content: none;
         }
-        .container-b{
-            display: flex;
-            flex-direction: row;
-            padding: 50px 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 2px 2px 4px 5px rgba(1, 1, 1, 0.2);
-            transition: ease 0.2s;
-        }
-        .container-b:hover{
+        .container .container-box-b:hover{
             text-shadow: white 0px 0px 10px;
-            box-shadow: white 0px 0px 7px;
+            box-shadow: white 0px 0px 12px;
+            background: url('/Media/Images/movie2.jpg');
+            background-size: cover;         
+            background-position: center;   
+            background-repeat: no-repeat; 
+            content: none;
         }
-        .container .container-a img, .container-b img{
+        .container-box-a:hover img,
+        .container-box-a:hover p,
+        .container-box-b:hover img,
+        .container-box-b:hover p {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .container .container-box-a img, .container-box-b img{
             margin-top: 10px;
             margin-left: -10px;
             width: 40px;
@@ -131,13 +96,13 @@
         </div>
         <div class="container">
             <a href="/HTML/Songs/SongCollection.html">
-                <div class="container-a">
+                <div class="container-box-a">
                     <img src="/Media/Images/music-icon2.png">
                     <p>Songs</p>
                 </div>
             </a>
             <a href="/HTML/Movies/MovieCollection.html">
-                <div class="container-b">
+                <div class="container-box-b">
                     <img src="/Media/Images/movie-icon2.png">
                     <p>Movies</p>
                 </div>

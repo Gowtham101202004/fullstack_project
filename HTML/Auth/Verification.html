@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Phone Verification</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <style>
         body {
@@ -30,6 +30,11 @@
             font-size: 20px;
             color: white;
         }
+        #a{
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -39,27 +44,26 @@
             <h1>Netify</h1>
         </div>
         <div class="auth-details">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="email" required>
-                <label>email</label>
+            <!-- <h1>Phone Verification</h1> -->
+            <div id="a">
+                Please enter your registered phone number <br>for verification.
             </div>
             <div class="input-box">
-                <input type="password" required>
-                <label>password</label>
+                <select>
+                    <option>+91</option>
+                    <option>+94</option>
+                    <option>+81</option>
+                    <option>+1</option>
+                    <option>+61</option>
+                    <option>+62</option>
+                    <option>+977</option>
+                </select>
+                <input type="number" required>
+                <label>phone number</label>
             </div>
-            <a href="/HTML/Auth/Mobile_OTP.html">
-                <p style="margin-bottom: 10px;">forgot password?</p>
-            </a>
             <div class="auth-button">
-                <a href="/HTML/HomePage.html">
-                    <input type="submit" value="Login">
-                </a>
-            </div>
-            <div class="last">
-                Don't have an account?
-                <a href="/HTML/Auth/SignUp.html">
-                    <span> SignUp</span>
+                <a href="/HTML/Auth/OTP.html">
+                    <input type="submit" value="Next">
                 </a>
             </div>
         </div>
