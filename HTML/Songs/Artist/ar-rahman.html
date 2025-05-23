@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/artist_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 60px;
+        }
+        b{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(0, 255, 229);
+            font-weight: bold;
+        }
+        .details h1{
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+        .details p{
+            margin: 15px 0 0 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-shadow: black 0px 0px 10px;
+            line-height: 1.4;
+        }
+        .image{
+            height: 225px;
+            width: 350px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        audio{
+            height: 40px;
+            width: 400px;
+            padding: 10px;
+        }
+        .table-container{
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        table th{
+            font-size: 25px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            text-shadow: white 0px 0px 3px;
+            width: 200px;
+            padding: 10px;
+        }
+        table td{
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Artist</h1>
+    <div class="container">
+        <img src="/Media/Images/ar_rahman.jpg" class="image">
+        <div class="details">
+            <h1>AR Rahman</h1>
+            <p>
+                <b>A. R. Rahman</b> is one of the most legendary and influential music composers in the global music industry. Renowned for his soulful compositions, groundbreaking fusion of genres, and spiritual depth, Rahman rose to international fame with his debut in <span>Roja</span> and went on to win <span>Academy Awards, Grammy Awards, a BAFTA Award, a Golden Globe, and six National Film Awards</span>. Blending Indian classical music with electronic beats, orchestral arrangements, and world sounds, his work has transformed the soundscape of Indian cinema. From timeless melodies to powerful anthems, Rahman's music transcends language and borders. His live performances are immersive and inspirational, earning him the title of "The Mozart of Madras" and a permanent place in the hearts of music lovers around the world.            
+            </p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie</th>
+                    <th>Song name</th>
+                    <th>Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1996</td>
+                    <td>Kadhal Desam</td>
+                    <td>Mustafa Mustafa</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Mustafa-Mustafa.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>Jeans</td>
+                    <td>Columbus Columbu</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Columbus-Columbu.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>1994</td>
+                    <td>Kadhalan</td>
+                    <td>Urvashi Urvashi</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Urvashi-Urvashi-MassTamilan.dev.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Aaytha Ezhuthu</td>
+                    <td>Yakkai Thiri</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Yakkai-Thiri.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2006</td>
+                    <td>Sillunu Oru Kadhal</td>
+                    <td>New York Nagaram</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/New York Nagaram.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>O Kadhal Kanmani</td>
+                    <td>Mental Manadhil</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Mental-Manadhil.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>Sivaji</td>
+                    <td>Athiradee Kaalam</td>
+                    <td><audio src="/Media/Audio/Artist/AR_Rahman/Athiradee-Kaalam.mp3" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

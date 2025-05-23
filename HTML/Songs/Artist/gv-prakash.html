@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/artist_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 60px;
+        }
+        b{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(0, 255, 229);
+            font-weight: bold;
+        }
+        .details h1{
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+        .details p{
+            margin: 15px 0 0 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-shadow: black 0px 0px 10px;
+            line-height: 1.4;
+        }
+        .image{
+            height: 225px;
+            width: 350px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        audio{
+            height: 40px;
+            width: 400px;
+            padding: 10px;
+        }
+        .table-container{
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        table th{
+            font-size: 25px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            text-shadow: white 0px 0px 3px;
+            width: 200px;
+            padding: 10px;
+        }
+        table td{
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Artist</h1>
+    <div class="container">
+        <img src="/Media/Images/gv_prakash.png" class="image">
+        <div class="details">
+            <h1>GV Prakash Kumar</h1>
+            <p>
+                <b>GV Prakash Kumar</b> is a multifaceted talent in the Indian film industry, widely celebrated as a composer, playback singer, and actor. Renowned for his melodious compositions and emotionally stirring soundtracks, GV Prakash made his mark with the film <span>Veyil</span> and quickly rose to fame with hits like <span>Aayirathil Oruvan, Madrasapattinam, and Darling</span>. His music seamlessly blends traditional South Indian melodies with modern orchestration, creating timeless tracks that appeal to both critics and audiences alike. Known for his versatility, GV Prakash has delivered everything from soulful romantic tunes to intense background scores that elevate cinematic storytelling. In addition to his music career, he has also established himself as a successful actor, showcasing his range and depth as a performer.
+            </p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie</th>
+                    <th>Song name</th>
+                    <th>Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2011</td>
+                    <td>Aadukalam</td>
+                    <td>Yathe Yathe</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Yathe-Yathe.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Darling</td>
+                    <td>Anbe Anbe</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Anbe Anbe.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>Thalaivaa</td>
+                    <td>Yaar Indha Saalai Oram</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Yaar-Indha-Saalai-Oram.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>Mayakkam Enna</td>
+                    <td>Pirai Thedum</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Pirai-Thedum.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>Udhayam NH4</td>
+                    <td>Yaaro Ivan</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Yaaro-Ivan.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>Neerparavai</td>
+                    <td>Para Para</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Para-Para.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>Muppozhudhum Un Karpanaigal</td>
+                    <td>Oru Murai</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Oru-Murai.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Naan Sigappu Manithan</td>
+                    <td>Idhayam Unnai Thedudhe</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Idhayam-Unnai.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Idhu Enna Maayam</td>
+                    <td>Iravaaga Nee</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Iravaga-Nee.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Trisha Illana Nayanthara</td>
+                    <td>Yennachu Yedhachu</td>
+                    <td><audio src="/Media/Audio/Artist/GV_Prakash/Yennachu-Yedhachu.mp3" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

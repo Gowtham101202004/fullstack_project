@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/artist_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 60px;
+        }
+        b{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(0, 255, 229);
+            font-weight: bold;
+        }
+        .details h1{
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+        .details p{
+            margin: 15px 0 0 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-shadow: black 0px 0px 10px;
+            line-height: 1.4;
+        }
+        .image{
+            height: 225px;
+            width: 350px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        audio{
+            height: 40px;
+            width: 400px;
+            padding: 10px;
+        }
+        .table-container{
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        table th{
+            font-size: 25px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            text-shadow: white 0px 0px 3px;
+            width: 200px;
+            padding: 10px;
+        }
+        table td{
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Artist</h1>
+    <div class="container">
+        <img src="/Media/Images/anirudh.jpg" class="image">
+        <div class="details">
+            <h1>Anirudh Ravichander</h1>
+            <p>
+                <b>Anirudh Ravichander</b> is one of the most dynamic and sought-after music composers in the Indian film industry. Known for his fresh sounds, chart-topping hits, and youthful energy, Anirudh shot to fame with his debut song <span>"Why This Kolaveri Di"</span> and has since composed music for numerous blockbuster Tamil and Telugu films. With a unique blend of electronic, classical, and folk influences, his music resonates deeply with audiences of all ages. Whether it's a peppy dance number or an emotional melody, Anirudh continues to push musical boundaries and redefine contemporary Indian cinema music.He has collaborated with top filmmakers and stars, delivering iconic albums that have left a lasting impact on South Indian music. His stage presence and live performances are electrifying, further cementing his status as a youth icon and musical trendsetter.
+            </p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie</th>
+                    <th>Song name</th>
+                    <th>Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>Jailer</td>
+                    <td>Hukum - Thalaivar Alappara</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Hukum---Thalaivar-Alappara-MassTamilan.dev.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Master</td>
+                    <td>Quit Pannuda</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Quit-Pannuda-MassTamilan.io.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Velaiyilla Pattathari</td>
+                    <td>Ey Inga Paaru</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Ey Inga Paaru.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Velaiyilla Pattathari</td>
+                    <td>Udhungada Sangu</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Udhungada Sangu.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Velaiyilla Pattathari</td>
+                    <td>VIP (Title Song)</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Velaiyilla Pattathari (Title Song).mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Remo</td>
+                    <td>Senjitaley</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Senjitaley.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>Ethir Neechal</td>
+                    <td>Boomi Enna Suthudhe</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Boomi-Enna-Suthudhe.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Naanum Rowdydhaan</td>
+                    <td>Varava Varava</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Varava-Varava.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Beast</td>
+                    <td>Arabic Kuthu</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Arabic-Kuthu---Halamithi-Habibo-MassTamilan.so.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Maari</td>
+                    <td>Don'u Don'u Don'u</td>
+                    <td><audio src="/Media/Audio/Artist/Anirudh/Don'u Don'u Don'u (The Don's Romance).mp3" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

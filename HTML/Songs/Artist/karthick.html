@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/artist_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 60px;
+        }
+        b{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(0, 255, 229);
+            font-weight: bold;
+        }
+        .details h1{
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+        .details p{
+            margin: 15px 0 0 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-shadow: black 0px 0px 10px;
+            line-height: 1.4;
+        }
+        .image{
+            height: 225px;
+            width: 350px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        audio{
+            height: 40px;
+            width: 400px;
+            padding: 10px;
+        }
+        .table-container{
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        table th{
+            font-size: 25px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            text-shadow: white 0px 0px 3px;
+            width: 200px;
+            padding: 10px;
+        }
+        table td{
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Artist</h1>
+    <div class="container">
+        <img src="/Media/Images/karthik.jpg" class="image">
+        <div class="details">
+            <h1>Karthick</h1>
+            <p>
+                <b>Karthik</b> is one of the most versatile and melodious playback singers in the Indian music industry. Celebrated for his smooth voice, emotive expression, and vocal range, Karthik made his debut with the song <span>"Nendhukittaen"</span> from the film <span>Star</span>, composed by A. R. Rahman. Since then, he has recorded over <span>8000 songs</span> across various Indian languages including Tamil, Telugu, Malayalam, Kannada, Hindi, Odia, Bengali, Marathi, and Sanskrit. Known for effortlessly switching between classical, folk, and contemporary styles, he has become a favorite of many leading music directors. Karthik’s soulful renditions and energetic performances continue to captivate audiences, earning him accolades, awards, and a loyal fan following across generations. His contribution to playback singing has made him a cherished voice in Indian music.
+            </p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie</th>
+                    <th>Song name</th>
+                    <th>Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2010</td>
+                    <td>7 Aum Arivu<br>(7aam Arivu)</td>
+                    <td>Mun Andhi</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Mun-Andhi.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>Vaaranam Aayiram</td>
+                    <td>Ava Enna Enna</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Ava-Enna-Enna-MassTamilan.com.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Ghajini</td>
+                    <td>Oru Maalai</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Oru-Maalai.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>Raavanan</td>
+                    <td>Usurae Poguthey</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Usurae-Poguthey.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>Yaaradi Nee Mohini</td>
+                    <td>Oru Naalaikkul</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Oru-Naalaikkul.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td>Paiya</td>
+                    <td>Suthuthe Suthuthe Bhoomi</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Suthuthe-Suthuthe-Bhoomi.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td>Ayan</td>
+                    <td>Vizhi Moodi Yosithaal</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Vizhi Moodi Yosithaal.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>Unnaale Unnaale</td>
+                    <td>Unnaale Unnaale</td>
+                    <td><audio src="/Media/Audio/Artist/Karthick/Unnaale-Unnaale.mp3" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

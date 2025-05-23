@@ -23,30 +23,56 @@
             filter: blur(3px);
             z-index: -1;
         }
-        table img{
-            width: 400px;
+        .container{
+            position: relative;
+        }
+        .scroll-container{
+            margin-right: 20px;
+            height: fit-content;
+            padding: 0 10px;
+            overflow-x: auto;
+        }
+        .category{
+            margin: 15px 0 0 30px;
+            padding: 0 15px;
+            text-align: left;
+            justify-self: left;
+            border: 2px solid white;
+            text-shadow: black 0 0 10px;
+            box-shadow:  white 0 0 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: fit-content;
+            background-color: rgba(52, 52, 52, 0.3);
+        }
+        .scroll-container img{
+            height: 155px;
+            width: 250px;
             transition: ease 0.1s;
             border: 2px solid white;
             transition: ease 0.2s;
         }
-        table img:hover{
+        .scroll-container img:hover{
             box-shadow: white 0px 0px 10px;
             cursor: pointer;
         }
-        th{
-            padding: 0 40px;
+        .scroll-row {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
         }
-        .back-icon{
-            position: absolute;
-            margin-left: 30px;
-            width: 45px;
-            height: auto;
-            border: 2px solid transparent;
-            border-radius: 50px;
-            transition: ease-in 0.2s;
+        .details {
+            padding: 0 10px;
+            flex: 0 0 auto;
+            text-align: center;
         }
-        .back-icon:hover{
-            background: rgba(255, 255, 255, 0.2);
+        h2{
+            margin: 10px 0;
+        }
+        hr{
+            margin: 0 10px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
         }
     </style>
 </head>
@@ -54,24 +80,109 @@
     <a href="/HTML/HomePage.html">
         <img src="/Media/Images/back_button2.png" class="back-icon">
     </a>
-    <center>
-        <h1>Song Collection</h1>
-        <table>
-            <tr>
-                <th>
+    <h1 style="text-shadow: black 0 0 10px; font-size: 35px; text-align: center;">Songs</h1>
+    <div class="container">
+        <h1 class="category">Artist</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="/HTML/Songs/Artist/anirudh.html">
+                        <img src="/Media/Images/anirudh.jpg">
+                    </a>
+                    <h2>Anirudh Ravichander</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Artist/gv-prakash.html">
+                        <img src="/Media/Images/gv_prakash.png">
+                    </a>
+                    <h2>GV Prakash Kumar</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Artist/ar-rahman.html">
+                        <img src="/Media/Images/ar_rahman.jpg">
+                    </a>
+                    <h2>AR Rahman</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Artist/karthick.html">
+                        <img src="/Media/Images/karthik.jpg">
+                    </a>
+                    <h2>Karthik</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/sid_sriram.png">
+                    </a>
+                    <h2>Sid Sriram</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/yuvan.jpg">
+                    </a>
+                    <h2>Yuvan Shankar Raja</h2>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 class="category">Actor</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/vijay.jpg">
+                    </a>
+                    <h2>Vijay</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/ajith.jpg">
+                    </a>
+                    <h2>Ajith</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/rajini.jpg">
+                    </a>
+                    <h2>Rajinikanth</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/surya.jpg">
+                    </a>
+                    <h2>Surya</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/dhanush.jpg">
+                    </a>
+                    <h2>Dhanush</h2>
+                </div>
+                <div class="details">
+                    <a href="./moneyheist.html">
+                        <img src="/Media/Images/simbu.jpg">
+                    </a>
+                    <h2>Silambarasan</h2>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 class="category">Series BGM</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
                     <a href="./moneyheist.html">
                         <img src="/Media/Images/moneyheist.jpg">
                     </a>
                     <h2>Money Heist</h2>
-                </th>
-                <th>
-                    <a href="./got.html">
+                </div>
+                <div class="details">
+                     <a href="./got.html">
                         <img src="/Media/Images/got.jpg">
                     </a>
                     <h2>Game of Thrones</h2>
-                </th>
-            </tr>
-        </table>
-    </center>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

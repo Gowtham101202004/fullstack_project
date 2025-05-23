@@ -39,7 +39,7 @@
         .container{
             display: flex;
             flex-direction: row;
-            margin: 100px 400px 0 400px;
+            margin: 30px 400px 0 400px;
             justify-content: space-evenly;
         }
         .container .container-box-a, .container-box-b{
@@ -54,18 +54,16 @@
             transition: ease 0.3s;
         }
         .container .container-box-a:hover{
-            text-shadow: white 0px 0px 10px;
             box-shadow: white 0px 0px 12px;
-            background: url('/Media/Images/music2.jpg');
+            background: url('/Media/Images/music.jpg');
             background-size: cover;         
             background-position: center;   
             background-repeat: no-repeat; 
             content: none;
         }
         .container .container-box-b:hover{
-            text-shadow: white 0px 0px 10px;
             box-shadow: white 0px 0px 12px;
-            background: url('/Media/Images/movie2.jpg');
+            background: url('/Media/Images/movie.jpg');
             background-size: cover;         
             background-position: center;   
             background-repeat: no-repeat; 
@@ -86,6 +84,19 @@
             height: 40px;
             padding: 0 10px;
         }
+        .welcome{
+            margin: 0 20px;
+        }
+        .welcome h2{
+            font-size: 30px;
+        }
+        .welcome h3{
+            text-align: left;
+            line-height: 1.7;
+        }
+        b{
+            text-shadow: white 0px 0px 7px;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +104,10 @@
         <div class="logo_and_name">
             <img src="/Media/Images/Netify_Logo(White).png">
             <h1>Netify</h1>
+        </div>
+        <div class="welcome">
+            <h2>Welcome to <b>Netify</b>, the coolest spot to vibe with songs and dive into movies!</h2>
+            <h3>From feel-good beats to exciting movies, everything here matches your mood. Enjoy songs, watch movies, or discover something new at anytime, anywhere. So grab your snacks, put on your headphones, and let Netify make your day awesome...!</h3>
         </div>
         <div class="container">
             <a href="/HTML/Songs/SongCollection.html">
