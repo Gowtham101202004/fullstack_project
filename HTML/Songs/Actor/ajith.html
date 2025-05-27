@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/ajith.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 60px;
+        }
+        b{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(0, 255, 229);
+            font-weight: bold;
+        }
+        .details h1{
+            text-align: left;
+            margin: 0 0 0 20px;
+        }
+        .details p{
+            margin: 15px 0 0 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-shadow: black 0px 0px 10px;
+            line-height: 1.4;
+        }
+        .image{
+            height: 225px;
+            width: 350px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        audio{
+            height: 40px;
+            width: 400px;
+            padding: 10px;
+        }
+        .table-container{
+            margin-top: 70px;
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .table-container img{
+            height: 150px;
+            width: 130px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 5px;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        table th{
+            font-size: 25px;
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            text-shadow: white 0px 0px 3px;
+            width: 200px;
+            padding: 10px;
+        }
+        table td{
+            border: 1px solid white;
+            box-shadow: white 0px 0px 8px;
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Actor</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie</th>
+                    <th>Singer(s)</th>
+                    <th>Song name</th>
+                    <th>Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td><img src="/Media/Images/vedhalam.jpg"><br>Vedhalam</td>
+                    <td>Anirudh Ravichander,<br>Badshah</td>
+                    <td>Aaluma Doluma</td>
+                    <td><audio src="/Media/Audio/Actor/Ajith/Aaluma-Doluma.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td><img src="/Media/Images/arrambam.jpg"><br>Arrambam</td>
+                    <td>Shankar Mahadevan,<br>Yuvan Shankar Raja</td>
+                    <td>Adadada Arrambame</td>
+                    <td><audio src="/Media/Audio/Actor/Ajith/Adadada-Arrambame-MassTamilan.dev.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td><img src="/Media/Images/billa.jpg"><br>Billa</td>
+                    <td>Vijay Yesudas,<br>Yuvan Shankar Raja</td>
+                    <td>Seval Kodi</td>
+                    <td><audio src="/Media/Audio/Actor/Ajith/Seval-Kodi-MassTamilan.fm.mp3" controls></audio></td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td><img src="/Media/Images/yennai_arindhal.jpg"><br>Yennai Arindhaal</td>
+                    <td>Vijay Prakash,<br>Gana Bala</td>
+                    <td>Adhaaru Adhaaru</td>
+                    <td><audio src="/Media/Audio/Actor/Ajith/Adhaaru-Adhaaru.mp3" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

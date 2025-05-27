@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Songs</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <style>
         body {
@@ -13,7 +13,6 @@
             content: "";
             position: fixed;
             top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             background-image: url("/Media/Images/movie_background.jpeg");
@@ -23,18 +22,56 @@
             filter: blur(3px);
             z-index: -1;
         }
-        table img{
-            height: 220px;
-            width: 400px;
+        .container{
+            position: relative;
+        }
+        .scroll-container{
+            margin-right: 20px;
+            height: fit-content;
+            padding: 0 10px;
+            overflow-x: auto;
+        }
+        .category{
+            margin: 15px 0 0 30px;
+            padding: 0 15px;
+            text-align: left;
+            justify-self: left;
+            border: 2px solid white;
+            text-shadow: black 0 0 10px;
+            box-shadow:  white 0 0 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: fit-content;
+            background-color: rgba(52, 52, 52, 0.3);
+        }
+        .scroll-container img{
+            height: 155px;
+            width: 250px;
+            transition: ease 0.1s;
             border: 2px solid white;
             transition: ease 0.2s;
         }
-        table img:hover{
+        .scroll-container img:hover{
             box-shadow: white 0px 0px 10px;
             cursor: pointer;
         }
-        th{
-            padding: 0 40px;
+        .scroll-row {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+        }
+        .details {
+            padding: 0 10px;
+            flex: 0 0 auto;
+            text-align: center;
+        }
+        h2{
+            margin: 10px 0;
+        }
+        hr{
+            margin: 0 10px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
         }
     </style>
 </head>
@@ -42,24 +79,26 @@
     <a href="/HTML/HomePage.html">
         <img src="/Media/Images/back_button2.png" class="back-icon">
     </a>
-    <center>
-        <h1>Movie Collection</h1>
-        <table>
-            <tr>
-                <th>
-                    <a href="/HTML/Movies/NarutoMovie.html">
-                        <img src="/Media/Images/naruto.jpg">
+    <h1 style="text-shadow: black 0 0 10px; font-size: 35px; text-align: center;">Movies</h1>
+    <div class="container">
+        <h1 class="category">Web Series</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="/HTML/Movies/Web_Series/moneyheist.html">
+                        <img src="/Media/Images/moneyheist.jpg">
                     </a>
-                    <h2>Naruto Collections</h2>
-                </th>
-                <th>
-                    <a href="/HTML/Movies/OnePieceMovie.html">
-                        <img src="/Media/Images/one_piece.jpg">
+                    <h2>Money Heist</h2>
+                </div>
+                <div class="details">
+                     <a href="/HTML/Movies/Web_Series/got.html">
+                        <img src="/Media/Images/got.jpg">
                     </a>
-                    <h2>One Piece Collections</h2>
-                </th>
-            </tr>
-        </table>
-    </center>
+                    <h2>Game of Thrones</h2>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
 </body>
 </html>
