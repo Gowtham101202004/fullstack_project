@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Now</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+            height: fit-content;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/trending_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .left-container{
+            margin: 60px 60px 0 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-container img{
+            height: 290px;
+            width: 500px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        .left-container audio{
+            margin-top: 15px;
+            width: 520px;
+            height: 40px;
+        }
+        .right-container{
+            height: fit-content;
+        }
+        .right-container table{
+            margin-top: 70px;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        .right-container table td{
+            border-color: white;
+            box-shadow: white 0px 0px 8px;
+            border-width: 2px;
+            min-width: 150px;
+            max-width: 460px;
+            padding: 10px;
+        }
+        b{
+            font-weight: bold;
+        }
+        .recommended{
+            margin-top: 50px;
+            padding: 0 25px;
+        }
+        .category{
+            margin: 15px 0 10px 30px;
+            font-size: 28px;
+            padding: 3px 20px;
+            text-align: left;
+            justify-self: left;
+            border: 2px solid white;
+            text-shadow: black 0 0 10px;
+            box-shadow:  white 0 0 8px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: fit-content;
+            background-color: rgba(52, 52, 52, 0.3);
+        }
+        .scroll-container{
+            height: fit-content;
+            padding: 0 10px;
+            overflow-x: auto;
+        }
+        .scroll-container img{
+            height: 165px;
+            width: 260px;
+            transition: ease 0.1s;
+            border: 2px solid white;
+            transition: ease 0.2s;
+        }
+        .scroll-container img:hover{
+            box-shadow: white 0px 0px 10px;
+            cursor: pointer;
+        }
+        .scroll-row {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+        }
+        .details {
+            padding: 0 10px;
+            flex: 0 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Trending Now</h1>
+    <div class="container">
+        <div class="left-container">
+            <div>
+                <img src="/Media/Images/vinveli-nayaga.jpg">
+            </div>
+            <div>
+                <audio src="/Media/Audio/Trending_Songs/Vinveli Nayaga.mp3" controls></audio>
+            </div>
+        </div>
+        <div class="right-container">
+            <table border>
+            <tr>
+                <td><b>Genre</b></td>
+                <td>Folk, Electronic, Dance</td>
+            </tr>
+            <tr>
+                <td><b>Movie</b></td>
+                <td>Thug Life (2025)</td>
+            </tr>
+            <tr>
+                <td><b>Composer(s)</b></td>
+                <td>A. R. Rahman</td>
+            </tr>
+            <tr>
+                <td><b>Lyricist(s)</b></td>
+                <td>Karthik Netha</td>
+            </tr>
+            <tr>
+                <td><b>Singer(s)</b></td>
+                <td>A.R.Rahman, Shruti Haasan, A.R.Ameen</td>
+            </tr>
+            <tr>
+                <td><b>Released</b></td>
+                <td>24 May 2025</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div class="recommended">
+        <h1 class="category">Recommended for You</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song1.html">
+                        <img src="/Media/Images/kanimaa.jpg">
+                    </a>
+                    <h2>Kanimaa</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song2.html">
+                        <img src="/Media/Images/jinguchaa.jpg">
+                    </a>
+                    <h2>Jinguchaa</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song4.html">
+                        <img src="/Media/Images/o-maara.jpg">
+                    </a>
+                    <h2>O Maara</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song5.html">
+                        <img src="/Media/Images/kannadi-poove.jpg">
+                    </a>
+                    <h2>Kannadi Poove</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song6.html">
+                        <img src="/Media/Images/poyiva-nanba.jpg">
+                    </a>
+                    <h2>Poyivaa Nanba</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -32,28 +32,28 @@
             width: 100%;
         }
         .left-container{
+            margin: 60px 60px 0 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 60px 60px 60px 130px;
         }
         .left-container img{
-            height: 330px;
-            width: 550px;
+            height: 290px;
+            width: 500px;
             border: 2px solid white;
             box-shadow: white 0px 0px 10px;
         }
         .left-container audio{
             margin-top: 15px;
-            width: 570px;
+            width: 520px;
             height: 40px;
         }
         .right-container{
             height: fit-content;
         }
         .right-container table{
-            margin-top: 85px;
+            margin-top: 70px;
             border-collapse: collapse;
             font-size: 20px;
         }
@@ -62,10 +62,55 @@
             box-shadow: white 0px 0px 8px;
             border-width: 2px;
             min-width: 150px;
+            max-width: 460px;
             padding: 10px;
         }
         b{
             font-weight: bold;
+        }
+        .recommended{
+            margin-top: 50px;
+            padding: 0 25px;
+        }
+        .category{
+            margin: 15px 0 10px 30px;
+            font-size: 28px;
+            padding: 3px 20px;
+            text-align: left;
+            justify-self: left;
+            border: 2px solid white;
+            text-shadow: black 0 0 10px;
+            box-shadow:  white 0 0 8px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: fit-content;
+            background-color: rgba(52, 52, 52, 0.3);
+        }
+        .scroll-container{
+            height: fit-content;
+            padding: 0 10px;
+            overflow-x: auto;
+        }
+        .scroll-container img{
+            height: 165px;
+            width: 260px;
+            transition: ease 0.1s;
+            border: 2px solid white;
+            transition: ease 0.2s;
+        }
+        .scroll-container img:hover{
+            box-shadow: white 0px 0px 10px;
+            cursor: pointer;
+        }
+        .scroll-row {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+        }
+        .details {
+            padding: 0 10px;
+            flex: 0 0 auto;
+            text-align: center;
         }
     </style>
 </head>
@@ -87,11 +132,11 @@
             <table border>
             <tr>
                 <td><b>Genre</b></td>
-                <td>kuthu, dance, pop, EDM, folk music</td>
+                <td>Kuthu, Dance, Pop, EDM, Folk music</td>
             </tr>
             <tr>
                 <td><b>Movie</b></td>
-                <td>Retro</td>
+                <td>Retro (2025)</td>
             </tr>
             <tr>
                 <td><b>Composer(s)</b></td>
@@ -110,6 +155,43 @@
                 <td>21 March 2025</td>
             </tr>
         </table>
+        </div>
+    </div>
+    <div class="recommended">
+        <h1 class="category">Recommended for You</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song2.html">
+                        <img src="/Media/Images/jinguchaa.jpg">
+                    </a>
+                    <h2>Jinguchaa</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song3.html">
+                        <img src="/Media/Images/vinveli-nayaga.jpg">
+                    </a>
+                    <h2>Vinveli Nayagaa</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song4.html">
+                        <img src="/Media/Images/o-maara.jpg">
+                    </a>
+                    <h2>O Maara</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song5.html">
+                        <img src="/Media/Images/kannadi-poove.jpg">
+                    </a>
+                    <h2>Kannadi Poove</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Trending_Now/song6.html">
+                        <img src="/Media/Images/poyiva-nanba.jpg">
+                    </a>
+                    <h2>Poyivaa Nanba</h2>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        body {
+            position: relative;
+            height: fit-content;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Media/Images/trending_background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-container{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-container img{
+            height: 290px;
+            width: 500px;
+            border: 2px solid white;
+            box-shadow: white 0px 0px 10px;
+        }
+        .left-container audio{
+            margin-top: 15px;
+            width: 520px;
+            height: 40px;
+        }
+        b{
+            font-weight: bold;
+        }
+        .recommended{
+            margin-top: 50px;
+            padding: 0 25px;
+        }
+        .category{
+            margin: 15px 0 10px 30px;
+            font-size: 28px;
+            padding: 3px 20px;
+            text-align: left;
+            justify-self: left;
+            border: 2px solid white;
+            text-shadow: black 0 0 10px;
+            box-shadow:  white 0 0 8px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: fit-content;
+            background-color: rgba(52, 52, 52, 0.3);
+        }
+        .scroll-container{
+            height: fit-content;
+            padding: 0 10px;
+            overflow-x: auto;
+        }
+        .scroll-container img{
+            height: 165px;
+            width: 260px;
+            transition: ease 0.1s;
+            border: 2px solid white;
+            transition: ease 0.2s;
+        }
+        .scroll-container img:hover{
+            box-shadow: white 0px 0px 10px;
+            cursor: pointer;
+        }
+        .scroll-row {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+        }
+        .details {
+            padding: 0 10px;
+            flex: 0 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="/HTML/Songs/SongCollection.html">
+        <img src="/Media/Images/back_button2.png" class="back-icon">
+    </a>
+    <h1>Album</h1>
+    <div class="container">
+        <div class="left-container">
+            <div>
+                <img src="/Media/Images/usuraiye.jpg">
+            </div>
+            <div>
+                <audio src="/Media/Audio/Album/Usuraiya-Tholaichaen-Unakulla.mp3" controls></audio>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="recommended">
+        <h1 class="category">Recommended for You</h1>
+        <div class="scroll-container">
+            <div class="scroll-row">
+                <div class="details">
+                    <a href="/HTML/Songs/Album/album1.html">
+                        <img src="/Media/Images/azhage-azhage.jpg">
+                    </a>
+                    <h2>Azhage Azhage</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Album/album2.html">
+                        <img src="/Media/Images/aasa-kooda.jpg">
+                    </a>
+                    <h2>Aasa Kooda</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Album/album3.html">
+                        <img src="/Media/Images/adi-penne.jpg">
+                    </a>
+                    <h2>Adi Penne</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Album/album4.html">
+                        <img src="/Media/Images/alai-payum.jpg">
+                    </a>
+                    <h2>Alai Paayum</h2>
+                </div>
+                <div class="details">
+                    <a href="/HTML/Songs/Album/album5.html">
+                        <img src="/Media/Images/orasaadha.jpg">
+                    </a>
+                    <h2>Orasaadha</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
