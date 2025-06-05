@@ -33,6 +33,18 @@
             font-size: 18px;
             line-height: 26px;
         }
+        @media screen and (max-width: 767px){
+            .auth-details{
+                width: 250px;
+                padding: 40px;
+            }
+            .auth-details .input-box input{
+                width: 170px;
+            }
+            .auth-details .input-box label{
+                margin: 10px 0 0 -180px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -45,7 +57,7 @@
         </div>
         <div class="auth-details">
             <div id="a">
-                Please enter your registered mobile number <br>for verification.
+                Please enter your registered mobile number for verification
             </div>
             <div class="input-box">
                 <select>

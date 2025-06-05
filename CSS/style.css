@@ -210,12 +210,13 @@ a{
 
 /* Auth ends */
 
-@media (max-width: 768px){
+@media screen and (max-width: 767px){
     .auth-details{
         margin-top: 80px;
         width: fit-content;
         padding: 30px 40px;
     }
+
 }
 
-/* login responsive complete */
+/* login and signup responsice complete */

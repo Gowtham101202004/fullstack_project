@@ -39,6 +39,7 @@
         }
         #input-box-name{
             position: relative;
+            justify-content: center;
             margin-bottom: 20px;
             display: flex;
             flex-direction: row;
@@ -73,6 +74,39 @@
                 -1px 1px 0 #000,
                 1px 1px 0 #000;
         }
+        #input-phone{
+            width: 255px;
+        }
+        #input-phone-label{
+            margin-left: -265px;
+        }
+        @media screen and (max-width: 767px){
+            .auth-details{
+                padding: 40px 30px;
+            }
+            .auth-details .input-box input{
+                width: 230px;
+            }
+            .auth-details .input-box label{
+                margin: 10px 0 0 -240px;
+            }
+            #input-box-name input{
+                width: 100px;    
+            }
+            #input-box-name label{
+                margin: 10px 0 0 -110px;
+            }
+            #input-phone{
+                width: 185px;
+            }
+            #input-phone-label{
+                margin-left: -195px;
+            }
+            .auth-details .input-box select{
+                width: 40px;
+                padding: 10px 0 10px 5px;  
+            }
+        }
     </style>
 </head>
 <body>
@@ -106,8 +140,8 @@
                     <option>+62</option>
                     <option>+977</option>
                 </select>
-                <input type="number" style="width: 255px;" required>
-                <label style="margin-left: -265px;">phone number</label>
+                <input type="number" id="input-phone" required>
+                <label id="input-phone-label">phone number</label>
             </div>
             <div class="input-box">
                 <input type="email" required>
@@ -129,7 +163,6 @@
                     </a>
             </div>
             <div class="auth-button">
-                <!-- <input type="submit" value="Cancel"> -->
                  <a href="/HTML/Auth/OTP.html">
                      <input type="submit" value="Next">
                  </a>

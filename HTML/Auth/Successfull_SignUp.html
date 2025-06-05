@@ -60,6 +60,19 @@
         .go-icon:active{
             transform: scale(0.9);
         }
+        @media screen and (max-width: 767px){
+            .auth-details{
+                width: 250px;
+                padding: 20px 40px;
+            }
+            .auth-details h2{
+                font-size: 20px;
+                margin: 20px 0;
+            }
+            .go-icon{
+                width: 40px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -73,7 +86,6 @@
         <div class="auth-details">
             <div class="signup-success">
                 <img src="/Media/Images/tik.png">
-                <div class="particles"></div>
                 <h2>You signed up successfully!</h2>
             </div>
             <div class="auth-button">
