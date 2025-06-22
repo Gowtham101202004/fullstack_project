@@ -1,0 +1,140 @@
+body {
+    position: relative;
+    height: fit-content;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Media/Images/trending_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(3px);
+    z-index: -1;
+}
+h1{
+    text-align: center;
+}
+.container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-container img{
+    height: 290px;
+    width: 500px;
+    border: 2px solid white;
+    box-shadow: white 0px 0px 10px;
+}
+.left-container audio{
+    margin-top: 15px;
+    width: 520px;
+    height: 40px;
+}
+.right-container{
+    height: fit-content;
+    width: fit-content;
+}
+.right-container table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+.right-container table td{
+    border-color: white;
+    box-shadow: white 0px 0px 8px;
+    border-width: 2px;
+    min-width: 100px;
+    max-width: 460px;
+    padding: 10px;
+}
+b{
+    font-weight: bold;
+}
+.recommended{
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.category{
+    margin: 15px 0;
+    font-size: 28px;
+    padding: 3px 20px;
+    text-align: left;
+    justify-self: left;
+    border: 2px solid white;
+    text-shadow: black 0 0 10px;
+    box-shadow:  white 0 0 8px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: fit-content;
+    background-color: rgba(52, 52, 52, 0.3);
+}
+.scroll-container{
+    height: fit-content;
+    overflow-x: auto;
+}
+.scroll-container img{
+    height: 165px;
+    width: 260px;
+    transition: ease 0.1s;
+    border: 2px solid white;
+    transition: ease 0.2s;
+}
+.scroll-container img:hover{
+    box-shadow: white 0px 0px 10px;
+    cursor: pointer;
+}
+.scroll-row {
+    display: flex;
+    padding: 10px;
+}
+.details {
+    padding: 0 10px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+h2{
+    margin: 10px 0;
+}
+@media screen and (max-width: 767px){
+    .back-icon{
+        display: none;
+    }
+    .category{
+        font-size: 25px;
+    }
+    .container{
+        margin-top: 30px;
+        grid-template-columns: auto;
+    }
+    .left-container img{
+        width: 290px;
+        height: 175px;
+    }
+    .left-container audio{
+        width: 320px;
+        height: 30px;
+    }
+    .right-container{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    .right-container table{
+        margin: 20px 5px 0 5px;
+        font-size: 14px;
+    }
+    .right-container table td{
+        max-width: 460px;
+        padding: 8px;
+    }
+}

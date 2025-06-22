@@ -5,28 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/JavaScript/script.js"></script>
     <style>
-        body {
-            position: relative;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background-image: url("/Media/Images/background.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter: blur(3px);
-            z-index: -1;
-        }
-        h1{
-            font-size: 45px;
-        }
-        p{
-            font-size: 20px;
-            color: white;
+        #toggleIcon{
+            display: none;
+            transform: scale(0.90);
+            position: absolute;
+            margin: 12px 0 0 -30px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -42,16 +30,20 @@
             <div class="auth-details">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="email" required>
-                    <label>email</label>
+                    <input type="email" id="email" oninput="emailValidation()" onblur="emailValidation2()" required>
+                    <label id="email-label">email</label>
+                </div>
+                <div style="text-align: left;">
+                    <p id="emailCheck"></p>
                 </div>
                 <div class="input-box">
-                    <input type="password" required>
+                    <input type="password" id="pass" oninput="passwordValidation()" required>
                     <label>password</label>
+                    <i id="toggleIcon" class="fa-solid fa-eye-slash" onclick="togglePassword()"></i>
                 </div>
-                <a href="/HTML/Auth/Verification.html">
-                    <p style="margin-bottom: 10px;">forgot password?</p>
-                </a>
+                <p style="margin-bottom: 10px;">
+                    <a href="/HTML/Auth/Verification.html">forgot password?</a>
+                </p>       
                 <div class="auth-button">
                     <input type="submit" value="Login">
                 </div>
